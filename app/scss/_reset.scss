@@ -24,6 +24,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   font-family: 'Open Sans', sans-serif;
+  color: $color-grey500;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -32,6 +33,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  padding-top: 130px;
+  @media (max-width: 375px) {
+   padding-top: 222px;
+  }
 }
 ol, ul {
   list-style: none;
@@ -47,4 +52,7 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+a {
+  cursor: pointer;
 }

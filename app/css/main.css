@@ -5948,28 +5948,44 @@ h2 {
       margin-top: 20px; } }
 
 .map-section iframe {
-  min-height: 300px; }
+  min-height: 300px;
+  margin-top: -30px; }
   @media (max-width: 768px) {
     .map-section iframe {
       margin-top: 20px; } }
 
-.contact-section .contact-info {
-  max-width: 450px; }
-.contact-section ul {
-  padding-top: 50px; }
-  .contact-section ul li {
-    float: left;
-    font-size: 3em;
-    padding: 0 15px; }
-    .contact-section ul li:first-child {
-      padding-left: 0; }
-    .contact-section ul li a {
-      color: #636566; }
-      .contact-section ul li a:hover {
-        text-decoration: none; }
-@media (max-width: 375px) {
+.contact-section {
+  position: relative;
+  background-size: cover;
+  background-position-y: -180px; }
+  .contact-section h2, .contact-section a, .contact-section p, .contact-section i {
+    color: #fff; }
+  .contact-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .contact-section .contact-info {
+    max-width: 450px; }
   .contact-section ul {
-    padding: 15px 0;
-    width: 269px; }
+    padding-top: 50px; }
     .contact-section ul li {
-      font-size: 2em; } }
+      float: left;
+      font-size: 3em;
+      padding: 0 15px;
+      color: #fff; }
+      .contact-section ul li:first-child {
+        padding-left: 0; }
+      .contact-section ul li a:hover {
+        text-decoration: none;
+        color: #90CDEC; }
+      .contact-section ul li a i:hover {
+        color: #90CDEC; }
+  @media (max-width: 375px) {
+    .contact-section ul {
+      padding: 15px 0;
+      width: 269px; }
+      .contact-section ul li {
+        font-size: 2em; } }

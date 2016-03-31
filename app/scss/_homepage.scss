@@ -32,7 +32,7 @@
 .triple-layout {
   h2 {
     font-weight: 600;
-    text-align: center; 
+    text-align: center;
     margin-top: 0;
     margin-bottom: 35px;
     @media (max-width: 768px) {
@@ -44,6 +44,7 @@
 .map-section {
   iframe {
     min-height: 300px;
+    margin-top: -30px;
     @media (max-width: 768px) {
       margin-top: 20px;
     }
@@ -51,6 +52,20 @@
 }
 
 .contact-section {
+  position: relative;
+  background-size: cover;
+  background-position-y: -180px;
+  h2, a, p, i{
+    color: #fff;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+  }
   .contact-info {
     max-width: 450px;
   }
@@ -60,13 +75,17 @@
       float: left;
       font-size: 3em;
       padding: 0 15px;
+      color: #fff;
       &:first-child {
         padding-left: 0;
       }
       a {
-        color: $color-grey500;
         &:hover {
           text-decoration: none;
+          color: $color-blue100;
+        }
+        i:hover {
+          color: $color-blue100;
         }
       }
     }

@@ -5930,6 +5930,9 @@ h2 {
   .main-homepage .main-homepage-right p {
     padding-top: 10px;
     font-size: 1.2em; }
+    .main-homepage .main-homepage-right p a {
+      color: #fff;
+      font-size: 1.5em; }
   .main-homepage .main-homepage-right b {
     color: #fff; }
   @media (max-width: 375px) {

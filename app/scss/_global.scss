@@ -15,3 +15,38 @@ h2 {
     color: #fff;
   }
 }
+.section--pricing {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+
+  &:before {
+    display: block; 
+    content: " "; 
+    margin-top: -130px; 
+    height: 130px; 
+    visibility: hidden;
+  }
+
+  h2 {
+    margin-bottom: 100px;
+    text-align: left;
+  }
+
+  .btn {
+    min-width: 100px;
+  }
+
+  .btn-primary {
+    .fa {
+      color: #fff;
+    }
+  }
+}
+.contact-section--pricing {
+  position: fixed !important;
+  bottom: 0;
+  width: 100%;
+}

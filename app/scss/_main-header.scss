@@ -27,11 +27,18 @@
   }
   .main-header-contact--wrapper {
     text-align: right;
+    // &.col-xs-6 {
+    //   width: 100%;
+    // }
     p {
       font-weight: 700;
       color: #337ab7;
       a {
         font-weight: 300;
+        font-size: 1.4em;
+         @media (max-width: 450px) {
+           font-size: 1.3em;
+         }
       }
     }
     @media (max-width: 450px) {

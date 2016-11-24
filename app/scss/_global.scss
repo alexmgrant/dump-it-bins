@@ -1,52 +1,134 @@
 h2 {
   font-weight: 600;
 }
+
 .section {
   height: 400px;
-  padding-top:80px;
+  padding-top: 80px;
   @media (max-width: 768px) {
     height: auto;
     padding: 25px 0;
   }
 }
+
 .section-blue {
   background-color: $color-blue300;
-  h2, p, i, li {
+  h2,
+  p,
+  i,
+  li {
     color: #fff;
   }
 }
+
 .section--pricing {
+  @media (max-width: 500px) {
+    height: 2000px;
+  }
+  @media (max-width: 320px) {
+    height: 2050px;
+  }
+  height: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
-
   &:before {
-    display: block; 
-    content: " "; 
-    margin-top: -130px; 
-    height: 130px; 
+    display: block;
+    content: " ";
+    margin-top: -130px;
+    height: 130px;
     visibility: hidden;
   }
-
+  .icon-growth i {
+    color: #83B3C9;
+    padding-right: 15px;
+    &:first-child {
+      font-size: 7.3em;
+    }
+    &:nth-child(2) {
+      font-size: 9em;
+    }
+    &:last-child {
+      font-size: 10.7em;
+    }
+  }
+  .icon-growth--plus {
+    @extend .icon-growth;
+    &:first-child {
+      font-size: .6em;
+    }
+  }
+  .bin-size-row {
+    margin-top: 70px;
+  }
+  .thumbnail {
+    p {
+      padding: 10px;
+    }
+  }
+  .fa {
+    color: #83B3C9;
+    font-size: 7.4em;
+  }
   h2 {
     margin-bottom: 100px;
-    text-align: left;
+    font-size: 2.4em;
+    margin-bottom: 45px;
+    span {
+      // color: #EF6B81;
+      font-size: 1.4em;
+    }
   }
-
+  p {
+    padding-top: 15px;
+    padding-bottom: 45px;
+    font-size: 1.4em;
+  }
   .btn {
     min-width: 100px;
   }
-
   .btn-primary {
     .fa {
       color: #fff;
     }
   }
 }
+
 .contact-section--pricing {
   position: fixed !important;
   bottom: 0;
   width: 100%;
+}
+
+.order-online {
+  display: block;
+  color: #fff;
+}
+  .order-online--btn {
+    margin-left: 87px;
+  }
+
+.btn-default {
+  padding: 15px 25px;
+  margin-top: 15px;
+  border: none;
+  color: #636566;
+  text-transform: uppercase;
+}
+
+section.order-form {
+  height: 1040px;
+  padding-top: 0;
+  h2 {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 2.4em;
+    margin-bottom: 45px;
+    span {
+      // color: #EF6B81;
+      font-size: 1.4em;
+    }
+  }
 }

@@ -5879,24 +5879,59 @@ h2 {
 
 .section-blue {
   background-color: #62BEEB; }
-  .section-blue h2, .section-blue p, .section-blue i, .section-blue li {
+  .section-blue h2,
+  .section-blue p,
+  .section-blue i,
+  .section-blue li {
     color: #fff; }
 
 .section--pricing {
+  height: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 20px;
   margin-right: 20px;
   text-align: center; }
+  @media (max-width: 500px) {
+    .section--pricing {
+      height: 2000px; } }
+  @media (max-width: 320px) {
+    .section--pricing {
+      height: 2050px; } }
   .section--pricing:before {
     display: block;
     content: " ";
     margin-top: -130px;
     height: 130px;
     visibility: hidden; }
+  .section--pricing .icon-growth i, .section--pricing .icon-growth--plus i {
+    color: #83B3C9;
+    padding-right: 15px; }
+    .section--pricing .icon-growth i:first-child, .section--pricing .icon-growth--plus i:first-child {
+      font-size: 7.3em; }
+    .section--pricing .icon-growth i:nth-child(2), .section--pricing .icon-growth--plus i:nth-child(2) {
+      font-size: 9em; }
+    .section--pricing .icon-growth i:last-child, .section--pricing .icon-growth--plus i:last-child {
+      font-size: 10.7em; }
+  .section--pricing .icon-growth--plus:first-child {
+    font-size: .6em; }
+  .section--pricing .bin-size-row {
+    margin-top: 70px; }
+  .section--pricing .thumbnail p {
+    padding: 10px; }
+  .section--pricing .fa {
+    color: #83B3C9;
+    font-size: 7.4em; }
   .section--pricing h2 {
     margin-bottom: 100px;
-    text-align: left; }
+    font-size: 2.4em;
+    margin-bottom: 45px; }
+    .section--pricing h2 span {
+      font-size: 1.4em; }
+  .section--pricing p {
+    padding-top: 15px;
+    padding-bottom: 45px;
+    font-size: 1.4em; }
   .section--pricing .btn {
     min-width: 100px; }
   .section--pricing .btn-primary .fa {
@@ -5906,6 +5941,31 @@ h2 {
   position: fixed !important;
   bottom: 0;
   width: 100%; }
+
+.order-online {
+  display: block;
+  color: #fff; }
+
+.order-online--btn {
+  margin-left: 87px; }
+
+.btn-default {
+  padding: 15px 25px;
+  margin-top: 15px;
+  border: none;
+  color: #636566;
+  text-transform: uppercase; }
+
+section.order-form {
+  height: 1040px;
+  padding-top: 0; }
+  section.order-form h2 {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 2.4em;
+    margin-bottom: 45px; }
+    section.order-form h2 span {
+      font-size: 1.4em; }
 
 .main-header {
   z-index: 999;
@@ -5934,7 +5994,11 @@ h2 {
       font-weight: 700;
       color: #337ab7; }
       .main-header .main-header-contact--wrapper p a {
-        font-weight: 300; }
+        font-weight: 300;
+        font-size: 1.4em; }
+        @media (max-width: 450px) {
+          .main-header .main-header-contact--wrapper p a {
+            font-size: 1.3em; } }
     @media (max-width: 450px) {
       .main-header .main-header-contact--wrapper {
         padding-top: 25px;

@@ -5883,7 +5883,7 @@ h2 {
     color: #fff; }
 
 .section--pricing {
-  height: 570px;
+  height: 1075px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 20px;
@@ -5891,13 +5891,13 @@ h2 {
   text-align: center; }
   @media (max-width: 768px) {
     .section--pricing {
-      height: 770px; } }
+      height: 2270px; } }
   @media (max-width: 500px) {
     .section--pricing {
-      height: 1370px; } }
+      height: 2870px; } }
   @media (max-width: 320px) {
     .section--pricing {
-      height: 1370px; } }
+      height: 2870px; } }
   .section--pricing:before {
     display: block;
     content: " ";
